@@ -26,7 +26,7 @@ html {
 }
 nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 20px 8px;
@@ -72,7 +72,33 @@ nav ul li a:hover:after {
   background-color: black;
   color: white;
 }
-
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 80px;
+  color: #434343;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: "Cabin";
+}
+.header-text h1 span {
+  color: white;
+}
+.header-text h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: "Cabin";
+  font-style: normal;
+}
+.typewrite {
+  color: #ff004f;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: "Cabin";
+  font-style: normal;
+}
 /* *********************************************************About****************************************************** */
 
 #about {
@@ -321,7 +347,9 @@ form .btn2 {
   color: white;
   font-size: 20px;
   letter-spacing: 5px;
+  padding: 10px 20px;
 }
+
 /* The switch - the box around the slider */
 .switch {
   font-size: 17px;
@@ -506,7 +534,7 @@ nav .fa-solid {
     margin-left: 51px;
   }
   .bottom-last {
-    margin-top: 94px;
+    margin-top: 72px;
   }
   .bottom-last p {
     font-size: 14px;
