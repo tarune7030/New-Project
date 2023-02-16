@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* body {
+  background: grey;
+} */
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0, 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.container {
+  padding: 10px 10%;
+  margin-top: -71px;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(51, 158, 70);
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.fa-solid {
+  font-weight: 900;
+  margin-right: 20px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* *********************************************************About****************************************************** */
+
+#about {
+  padding: 194px 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+
+  border-radius: 15px;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+}
+.about-col-2 {
+  height: 400px;
+  width: 649px;
+
+  border-radius: 14px;
+  padding: 10px 20px;
+}
+.sub-title:before {
+  content: " ";
+  display: block;
+  height: 4px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: -53px;
+  background: black;
+}
+.sub-title {
+  position: relative;
+}
+.sub-title {
+  position: relative;
+  max-width: 500px;
+  margin: 60px;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 200;
+
+  font-weight: 400;
+}
+
+/* ***************************************************blogs**************************************** */
+
+#services {
+  padding: 30px 0;
+  background: rgb(51, 158, 70);
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 59px;
+}
+.services-list div {
+  background: black;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+  color: white;
+}
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services-list div a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div:hover {
+  background: rgb(15, 87, 164);
+  transform: translateY(-10px);
+  /* transform: scale(1.1); */
+}
+.blog-title:before {
+  content: " ";
+  display: block;
+  height: 4px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: -53px;
+  background: black;
+}
+.blog-title {
+  position: relative;
+}
+.blog-title {
+  position: relative;
+  max-width: 500px;
+  margin: 60px;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 60px;
+  font-weight: 200;
+
+  font-weight: 400;
+}
+
+/* ******************************contact********************************************************************** */
+#contact {
+  margin-top: 134px;
+}
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+.about-col-3 {
+  flex-basis: 35%;
+  border-radius: 15px;
+}
+
+.about-col-4 {
+  height: 385px;
+  width: 649px;
+  border-radius: 14px;
+  padding: 10px 20px;
+  margin-top: 14px;
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: rgb(51, 158, 70);
+  margin-left: 15px;
+  border-radius: 8px;
+  border: none;
+}
+.contact-left p {
+  margin-top: 30px;
+  margin-left: 145px;
+}
+.contact-left p i {
+  color: rgb(51, 158, 70);
+  font-size: 25px;
+}
+.contact-right form {
+  width: 35%;
+  margin: auto;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+  font-size: 18px;
+  background: rgb(123, 122, 122);
+  border-radius: 12px;
+  border: 1px solid rgb(30, 30, 30);
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #080808;
+}
+form .btn2:hover {
+  background-color: rgb(131, 225, 149);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+form .btn2:active {
+  transform: scale(0.9);
+}
+form .btn2 {
+  padding: 14px 40px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contact-title:before {
+  content: " ";
+  display: block;
+  height: 4px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: -115px;
+  background: black;
+}
+.contact-title {
+  position: relative;
+}
+.contact-title {
+  position: relative;
+  max-width: 500px;
+  margin: 60px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 60px;
+  font-weight: 200;
+
+  font-weight: 400;
+}
+
+.footer {
+  position: relative;
+  max-width: 500px;
+  margin: 28px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(51, 158, 70);
+}
+.bottom-last {
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+
+  background: rgb(65, 65, 65);
+  text-align: center;
+}
+.bottom-last p {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin-top: 24px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: rgb(255, 230, 0);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+.slider::after {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  top: 10%;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  background-color: rgb(0, 0, 0);
+  transition: ease 0.4s;
+}
+
+input:checked + .slider::after {
+  left: 80%;
+  width: 0px;
+  height: 0px;
+}
+
+/* ***************************************responsiveness**************************************** */
+nav .fa-solid {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  /* #header {
+        background-image: url(phone-background.png);
+      } */
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: rgb(132, 207, 145);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 17px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .sub-title:before {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 66px;
+    position: absolute;
+    top: 40%;
+    left: -76px;
+    background: black;
+  }
+  .blog-title {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .blog-title:before {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 77px;
+    position: absolute;
+    top: 40%;
+    left: -51px;
+    background: black;
+  }
+  .contact-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -575px;
+  }
+  .contact-title:before {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 65px;
+    position: absolute;
+    top: 40%;
+    left: -70px;
+    background: black;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  form input,
+  form textarea {
+    width: 190%;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid rgb(30, 30, 30);
+  }
+  .contact-left {
+    margin-top: -346px;
+  }
+  .footer {
+    font-size: 35px;
+    margin-left: -92px;
+  }
+  .contact-left p {
+    margin-top: 30px;
+    margin-left: 51px;
+  }
+  .bottom-last {
+    margin-top: 94px;
+  }
+  .bottom-last p {
+    font-size: 14px;
+  }
+}

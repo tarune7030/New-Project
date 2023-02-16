@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7c24c77b50.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <label class="switch">
+              <input onclick="darkMode()" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        </div>
+      </div>
+    </div>
+
+         <!--************************************About************************************************************ -->
+
+         <div id="about">
+          <div class="container">
+            
+            <div class="row">
+              <div class="about-col-1">
+                <img src="images/user.png" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>
+                  We are dedicated to creating beautiful, modern websites that help
+                  businesses reach their goals. Our team of experienced web
+                  designers and developers are committed to providing our clients
+                  with a custom-crafted experience that meets their individual
+                  needs. Whether you're looking to launch a new website, update an
+                  existing one, or revamp your current design, we have the tools and
+                  expertise to help you achieve success. From SEO optimization to
+                  content creation and beyond, we have the experience and skills to
+                  make your website stand out from the rest. Contact us
+                  today to get started!
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ***********************************************blog************************************* -->
+
+        <div id="services">
+          <div class="container">
+            <h1 class="blog-title">BLOGS</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>
+                  We offer comprehensive website design services to help businesses
+                  establish a strong online presence. Our team of experienced designers
+                  and developers use the latest technologies and design trends to create
+                  custom websites that are tailored to meet your specific needs
+                  and requirements.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Building</h2>
+                <p>
+                  At MakeMyySite, we believe that web development is the foundation of
+                  success for any online business. Our team of experienced web
+                  developers has the skills and expertise to create custom websites that
+                  are tailored to your unique needs. We strive to provide innovative
+                  solutions that combine cutting-edge technology and creative design to
+                  give you a website that stands out from the competition.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-searchengin"></i>
+                <h2>SEO</h2>
+                <p>
+                  We are dedicated to helping businesses of all sizes improve their
+                  rankings in search engine results, and to help them maximize their
+                  online visibility. We offer a range of services that can help you
+                  build a strong online presence, from organic search engine
+                  optimization (SEO) to paid search engine marketing (SEM) to social
+                  media marketing and more.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+         <!-- ******************************************contact******************************************************* -->
+
+    <div id="contact">
+      <div class="container">
+        
+        <div class="row">
+          <div class="about-col-3">
+            <form id="contactform" name="myForm">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                maxlength="10"
+                name="Mobile"
+                placeholder="Your Mobile No"
+                required
+              />
+              <!-- <input type="date" /> -->
+
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2">Submit</button>
+            </form>
+          </div>
+          <div class="about-col-4">
+            <h1 class="contact-title">ANY QUERIES</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-left">
+      <h1 class="footer">Reach Us</h1>
+      <p>
+        <i class="fa-sharp fa-solid fa-paper-plane"></i>sonyergurala9657@gmail.com
+      </p>
+      <p><i class="fa-solid fa-phone"></i>+91-9657162698</p>
+    </div>
+    <div class="bottom-last">
+      <p>ThankYou For Visiting</p>
+    </div>
+  </body>
+</html>
+
+<!-- **************************************************************************************************************************** -->
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
